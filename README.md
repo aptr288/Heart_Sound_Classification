@@ -11,7 +11,7 @@ SimpleSpeechRecognizer.ipynb <br>
 speechrecog.py <br>
 Speech Recognization reference <br>
 https://github.com/manashmndl/DeadSimpleSpeechRecognizer <br>
-https://blog.manash.me/building-a-dead-simple-word-recognition-engine-using-convnet-in-keras-25e72c19c12b
+https://blog.manash.me/building-a-dead-simple-word-recognition-engine-using-convnet-in-keras-25e72c19c12b<br>
 -------------------------------------------------------------------------------<br>
 Urban Sound Classification using NN  <br>
 UrbanSound.ipynb  <br>
