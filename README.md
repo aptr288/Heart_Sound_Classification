@@ -17,4 +17,7 @@ Urban Sound Classification using NN  <br>
 UrbanSound.ipynb  <br>
 http://aqibsaeed.github.io/2016-09-03-urban-sound-classification-part-1/  <br>
 https://github.com/aqibsaeed/Urban-Sound-Classification  <br>
-
+----------------------------------------------------------------------------- <br>
+Useful algos like svm, NN, CNN are implemented <br>
+https://github.com/mtobeiyf/audio-classification <br>
+-----------------------------------------------------------------------------<br>
