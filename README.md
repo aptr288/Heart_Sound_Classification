@@ -21,3 +21,8 @@ https://github.com/aqibsaeed/Urban-Sound-Classification  <br>
 Useful algos like svm, NN, CNN are implemented <br>
 https://github.com/mtobeiyf/audio-classification <br>
 -----------------------------------------------------------------------------<br>
+Urban Sound Classification Extended implementation  <br>
+UrbanSound.ipynb
+https://github.com/jaron/deep-listening <br>
+
+-----------------------------------------------------------------------------<br>
