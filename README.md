@@ -26,3 +26,6 @@ UrbanSound.ipynb
 https://github.com/jaron/deep-listening <br>
 
 -----------------------------------------------------------------------------<br>
+
+Wave file loading and manipulating <br>
+https://www.kaggle.com/neuropsyched/loading-and-manipulating-heartbeat-audio <br>
