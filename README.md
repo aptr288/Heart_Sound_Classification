@@ -29,3 +29,10 @@ https://github.com/jaron/deep-listening <br>
 
 Wave file loading and manipulating <br>
 https://www.kaggle.com/neuropsyched/loading-and-manipulating-heartbeat-audio <br>
+
+
+
+Heart sound segmentation <br>
+segmentation.ipynb<br>
+https://www.analyticsvidhya.com/blog/2017/11/heart-sound-segmentation-deep-learning/<br>
+<br>
