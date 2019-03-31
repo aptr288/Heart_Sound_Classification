@@ -1,4 +1,4 @@
-# AudioClassification #Heart Beat classification
+# Audio Classification 
 Performing basic audio classifications using tensor flow, ANN. 
 <br>
 -------------------------------------------------------------------------------<br>
