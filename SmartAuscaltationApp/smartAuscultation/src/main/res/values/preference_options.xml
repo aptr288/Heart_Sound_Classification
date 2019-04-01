@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="age_opts">
+		<item name="0-10">0-10</item>
+		<item name="10-20">10-20</item>
+		<item name="20-30">20-30</item>
+		<item name="30-40">30-40</item>
+		<item name="40-50">40-50</item>
+		<item name="50-60">50-60</item>
+		<item name="60-70">60-70</item>
+		<item name="70-80">70-80</item>
+		<item name="80-90">80-90</item>
+		<item name="90-100">90-100</item>
+	</string-array>
+	
+	<string-array name="age_vals">
+		<item name="0-10">5</item>
+		<item name="10-20">15</item>
+		<item name="20-30">25</item>
+		<item name="30-40">35</item>
+		<item name="40-50">45</item>
+		<item name="50-60">55</item>
+		<item name="60-70">65</item>
+		<item name="70-80">75</item>
+		<item name="80-90">85</item>
+		<item name="90-100">95</item>
+	</string-array>
+
+	<string-array name="height_opts">
+		<item name="4.25">4\'3\"</item>
+		<item name="4.5">4\'6\"</item>
+		<item name="4.75">4\'9\"</item>
+		<item name="5">5\'</item>
+		<item name="5.25">5\'3\"</item>
+		<item name="5.5">5\'6\"</item>
+		<item name="5.75">5\'9\"</item>
+		<item name="6">6\'</item>
+		<item name="6.25">6\'3\"</item>
+		<item name="6.5">6\'6\"</item>
+		<item name="6.75">6\'9\"</item>
+		<item name="7">7\'</item>
+		<item name="7.25">7\'3\"</item>
+		<item name="7.5">7\'6\"</item>
+		<item name="7.75">7\'9\"</item>
+		<item name="8">8\'</item>
+	</string-array>
+
+	<string-array name="height_vals">
+		<item name="4.25">121.92</item>
+		<item name="4.5">137.16</item>
+		<item name="4.75">144.78</item>
+		<item name="5">152.4</item>
+		<item name="5.25">160.02</item>
+		<item name="5.5">167.64</item>
+		<item name="5.75">175.26</item>
+		<item name="6">182.88</item>
+		<item name="6.25">190.5</item>
+		<item name="6.5">198.12</item>
+		<item name="6.75">205.74</item>
+		<item name="7">213.36</item>
+		<item name="7.25">220.98</item>
+		<item name="7.5">228.6</item>
+		<item name="7.75">236.22</item>
+		<item name="8">243.84</item>
+	</string-array>
+	
+	<string-array name="weight_opts">
+		<item name="40-50">40-50 lbs</item>
+		<item name="50-60">50-60 lbs</item>
+		<item name="60-70">60-70 lbs</item>
+		<item name="70-80">70-80 lbs</item>
+		<item name="80-90">80-90 lbs</item>
+		<item name="90-100">90-100 lbs</item>
+		<item name="100-110">100-110 lbs</item>
+		<item name="110-120">110-120 lbs</item>
+		<item name="120-130">120-130 lbs</item>
+		<item name="130-140">130-140 lbs</item>
+		<item name="140-150">140-150 lbs</item>
+		<item name="150-160">150-160 lbs</item>
+		<item name="160-170">160-170 lbs</item>
+		<item name="170-180">170-180 lbs</item>
+		<item name="180-190">180-190 lbs</item>
+		<item name="190-200">190-200 lbs</item>
+		<item name="200-210">200-210 lbs</item>
+		<item name="210-220">210-220 lbs</item>
+		<item name="220-230">220-230 lbs</item>
+		<item name="230-240">230-240 lbs</item>
+		<item name="240-250">240-250 lbs</item>
+	</string-array>
+	
+	<string-array name="weight_vals">
+		<item name="40-50">20.4</item>
+		<item name="50-60">24.9</item>
+		<item name="60-70">29.5</item>
+		<item name="70-80">34.0</item>
+		<item name="80-90">38.6</item>
+		<item name="90-100">43.1</item>
+		<item name="100-110">47.6</item>
+		<item name="110-120">52.2</item>
+		<item name="120-130">56.7</item>
+		<item name="130-140">61.2</item>
+		<item name="140-150">65.8</item>
+		<item name="150-160">70.3</item>
+		<item name="160-170">74.8</item>
+		<item name="170-180">79.4</item>
+		<item name="180-190">83.9</item>
+		<item name="190-200">88.5</item>
+		<item name="200-210">93.0</item>
+		<item name="210-220">97.5</item>
+		<item name="220-230">102.1</item>
+		<item name="230-240">106.6</item>
+		<item name="240-250">111.1</item>
+	</string-array>
+
+</resources>

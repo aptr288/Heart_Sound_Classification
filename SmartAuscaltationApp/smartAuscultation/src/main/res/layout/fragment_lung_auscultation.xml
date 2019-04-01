@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back">
+
+    <TextView
+        android:id="@+id/auscultationArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:text="Lung Auscultation"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:typeface="serif"/>
+
+    <ImageView
+        android:src="@drawable/lung_auscultation_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lungAuscultationImageView"
+        android:layout_below="@+id/auscultationArea"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lungAuscultationNextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/recordingProgressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAFFFFFF"
+        android:padding="5sp"
+        android:text="Select the Auscultation Area and click Next"
+        android:textColor="#111111"
+        android:layout_marginBottom="6dp"
+        android:layout_above="@+id/lungAuscultationNextButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#AAFFFFFF"
+        android:layout_below="@+id/lungAuscultationImageView"
+        android:layout_alignLeft="@+id/lungAuscultationImageView"
+        android:layout_alignStart="@+id/lungAuscultationImageView"
+        android:layout_alignRight="@+id/lungAuscultationImageView"
+        android:layout_alignEnd="@+id/lungAuscultationImageView">
+
+        <RadioButton android:id="@+id/radio_anterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anterior" />
+
+        <RadioButton android:id="@+id/radio_posterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posterior" />
+    </RadioGroup>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#AAFFFFFF"
+        android:id="@+id/auscultationSpinner"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/recordingProgressText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+</RelativeLayout>

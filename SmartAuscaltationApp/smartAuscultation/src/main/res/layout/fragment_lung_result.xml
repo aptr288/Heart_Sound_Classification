@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/analysis_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    android:padding="5sp" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280sp"
+        android:id="@+id/lungBaseLayout"
+        android:background="#AAFFFFFF">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="285sp"
+        android:background="#AAFFFFFF"
+        android:id="@+id/lungResultLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Patient Name"
+            android:id="@+id/patientName"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date and Time"
+            android:id="@+id/dateTimeLabel"
+            android:layout_below="@+id/patientName"
+            android:layout_alignLeft="@+id/patientName"
+            android:layout_alignStart="@+id/patientName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Auscultation Area Text"
+            android:id="@+id/lungAuscultationAreaText"
+            android:layout_below="@+id/dateTimeLabel"
+            android:layout_alignLeft="@+id/dateTimeLabel"
+            android:layout_alignStart="@+id/dateTimeLabel"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Loading classification results"
+            android:id="@+id/lungClassificationResult"
+            android:layout_below="@+id/lungAuscultationAreaText"
+            android:layout_alignLeft="@+id/lungAuscultationAreaText"
+            android:layout_alignStart="@+id/lungAuscultationAreaText"
+            android:layout_marginTop="29dp" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Share"
+            android:id="@+id/shareLungResult" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:minWidth="120dp"
+            android:text="Processing..."
+            android:id="@+id/playLungSound" />
+
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:minWidth="120dp"
+            android:id="@+id/lungPatientDetailsButton" />
+    </LinearLayout>
+
+</RelativeLayout>

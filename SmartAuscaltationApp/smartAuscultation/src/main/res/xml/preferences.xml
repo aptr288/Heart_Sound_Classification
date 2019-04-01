@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory
+		android:key="bp_prefs"
+		android:title="Blood Pressure Preferences" >
+		<ListPreference android:entryValues="@array/age_vals" android:defaultValue="25" android:key="age" android:entries="@array/age_opts" android:title="Age"/>
+		<ListPreference android:key="height" android:title="Height" android:entryValues="@array/height_vals" android:entries="@array/height_opts" android:defaultValue="182"/>
+		<ListPreference android:key="weight" android:title="Weight" android:entryValues="@array/weight_vals" android:entries="@array/weight_opts" android:defaultValue="70"/>
+		<CheckBoxPreference android:title="Continuous Measurement" android:key="continuous"/>
+	</PreferenceCategory>
+
+</PreferenceScreen>

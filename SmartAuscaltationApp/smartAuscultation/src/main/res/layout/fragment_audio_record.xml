@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_back"
+    android:padding="5sp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/auscultationArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:text="@string/title_activity_blood_pressure"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:typeface="serif"/>
+
+    <FrameLayout
+        android:id="@+id/graphContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.99"
+        android:layout_marginBottom="5sp"
+        android:background="#AAFFFFFF">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/recordingProgressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:background="#AAFFFFFF"
+        android:padding="5sp"
+        android:text="TextView"
+        android:textColor="#111111" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recordingProgressBar"
+        android:layout_marginBottom="5sp"
+        android:max="1000"
+        android:progress="25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Stop"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startStopButton" />
+
+        <Button
+            android:text="Record"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recordButton" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

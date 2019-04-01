@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/bp_base"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/app_back"
+	android:padding="5sp" >
+
+	<TextView
+		android:id="@+id/bp_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:padding="5sp"
+		android:text="@string/title_activity_blood_pressure"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#FFFFFF"
+		android:textSize="24sp"
+		android:typeface="serif" />
+
+	<TextView
+		android:id="@+id/bp_instruction"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5sp"
+		android:background="#AAFFFFFF"
+		android:padding="5sp"
+		android:text="@string/defaultText"
+		android:textColor="#111111"
+		android:layout_above="@+id/bp_start_button" />
+
+	<ImageView
+		android:id="@+id/bp_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/bp_instruction"
+		android:layout_alignLeft="@+id/bp_title"
+		android:layout_alignRight="@+id/bp_title"
+		android:layout_below="@+id/bp_title"
+		android:layout_marginBottom="5sp"
+		android:scaleType="fitCenter"
+		android:src="@drawable/inst_place_finger" />
+
+	<RelativeLayout
+		android:id="@+id/bp_data_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/bp_instruction"
+		android:layout_alignLeft="@+id/bp_title"
+		android:layout_alignRight="@+id/bp_title"
+		android:layout_below="@+id/bp_title"
+		android:layout_marginBottom="5sp"
+		android:background="#AAFFFFFF"
+		android:contentDescription="@string/finger_camera"
+		android:padding="5sp" >
+
+
+	</RelativeLayout>
+
+	<Button
+		android:id="@+id/heart_sound_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/bp_start_button"
+		android:layout_alignParentRight="true"
+		android:layout_alignTop="@+id/bp_start_button"
+		android:onClick="onAnalyze"
+		android:text="Analyze" />
+
+	<Button
+		android:id="@+id/bp_start_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_toLeftOf="@+id/heart_sound_button"
+		android:minHeight="64sp"
+		android:onClick="onStart"
+		android:text="@string/start_button"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true" />
+
+</RelativeLayout>

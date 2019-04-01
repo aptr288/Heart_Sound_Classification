@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="unt.cse.nsl.smartauscultation"
+    android:versionCode="1"
+    android:versionName="2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="unt.cse.nsl.smartauscultation.GlobalClass"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:allowBackup="false">
+        <activity
+            android:name="unt.cse.nsl.smartauscultation.SmartAuscultationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="My Heart Sound"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="unt.cse.nsl.smartauscultation.Preferences"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="My Heart Sound"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="unt.cse.nsl.smartauscultation.Splash"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/splash_back" >
+
+	<TextView
+	    android:id="@+id/splitText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:text="@string/app_name"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="#FFFFFF"
+	    android:textSize="32sp"
+	    android:typeface="serif" />
+
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/splitText"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/nsl_name"
+	    android:textColor="#AAAAAA"
+	    android:textSize="20sp"
+	    android:typeface="sans" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/textView3"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/univ_name"
+	    android:textColor="#BBBBBB"
+	    android:textSize="20sp"
+	    android:typeface="sans" />
+
+</RelativeLayout>

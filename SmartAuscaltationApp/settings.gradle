@@ -1,0 +1,3 @@
+include ':openCVLibrary2410'
+include ':libVitalDroidOpenCVr2'
+include ':smartAuscultation'

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/analysis_base_layout"
+    android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/app_back"
+	android:padding="5sp" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:id="@+id/analysis_base"
+        android:background="#AAFFFFFF">
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AAFFFFFF"
+        android:id="@+id/analysis_text"
+        android:layout_below="@+id/analysis_base">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalscrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Patient Name"
+            android:id="@+id/patient"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date and Time"
+            android:id="@+id/dateTime"
+            android:layout_below="@+id/patient"
+            android:layout_alignLeft="@+id/patient"
+            android:layout_alignStart="@+id/patient" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Auscultation Area Text"
+            android:id="@+id/auscultationAreaText"
+            android:layout_below="@+id/dateTime"
+            android:layout_alignLeft="@+id/dateTime"
+            android:layout_alignStart="@+id/dateTime" />
+
+        <TableLayout android:layout_width="match_parent"
+            android:layout_marginRight="3dp"
+            android:id="@+id/statsTable"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/auscultationAreaText">
+
+            <TableRow android:id="@+id/titleRow">
+                <TextView
+                    android:layout_column="1"
+                    android:text="S1 split time"
+                    android:background="@drawable/cell_shape"
+                    android:padding="4dip" />
+                <TextView
+                    android:layout_column="2"
+                    android:text="S2 split time"
+                    android:background="@drawable/cell_shape"
+                    android:padding="4dip" />
+                <TextView
+                    android:layout_column="3"
+                    android:text="Split result"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dip" />
+                <TextView
+                    android:layout_column="4"
+                    android:text="Classification"
+                    android:background="@drawable/cell_shape"
+                    android:padding="5dip" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+        </TableLayout>
+    </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Share"
+            android:id="@+id/capture_screen_shot" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:minWidth="120dp"
+            android:text="Processing..."
+            android:id="@+id/playButton" />
+
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:minWidth="120dp"
+            android:id="@+id/patientDetailsButton" />
+    </LinearLayout>
+
+</RelativeLayout>

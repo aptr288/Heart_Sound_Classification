@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/app_back"
+	android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/fs_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="@string/hb_detect_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/fs_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fs_title"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/fs_title"
+        android:minHeight="64dp"
+        android:onClick="onStartClick"
+        android:text="@string/start_button" />
+
+    <ProgressBar
+    	android:id="@+id/fs_progress"
+    	style="?android:attr/progressBarStyleHorizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_above="@+id/fs_start_button"
+    	android:layout_alignLeft="@+id/fs_start_button"
+    	android:layout_alignRight="@+id/fs_start_button"
+    	android:layout_marginBottom="5dp"
+    	android:max="1000" />
+
+    <TextView
+        android:id="@+id/fs_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fs_progress"
+        android:layout_alignLeft="@+id/fs_progress"
+        android:layout_alignRight="@+id/fs_progress"
+        android:layout_marginBottom="5dp"
+        android:background="#AAFFFFFF"
+        android:padding="5dp"
+        android:text="@string/dummy_text_layout"
+        android:textColor="#111111" />
+
+    <ImageView
+        android:id="@+id/fs_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fs_instruction"
+        android:layout_alignLeft="@+id/fs_title"
+        android:layout_alignRight="@+id/fs_title"
+        android:layout_below="@+id/fs_title"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/place_steth"
+        android:scaleType="fitCenter"
+        android:src="@drawable/inst_record_heart" />
+
+</RelativeLayout>

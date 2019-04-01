@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#222222"
+	android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/splitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exp_sys_pressure"
+        android:textColor="#DDDDDD"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/expected_systolic_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/exp_sys_pressure"
+        android:inputType="number"
+        android:textColor="#FFFFFF" >
+
+    	<requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exp_dia_pressure"
+        android:textColor="#DDDDDD"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/expected_diastolic_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/exp_dia_pressure"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
