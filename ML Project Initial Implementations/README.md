@@ -1,6 +1,9 @@
 # ML Project Code
 This repository  consists of  all the Machine Learning work done 
 
+![alt text](https://github.com/aptr288/Heart-Sound-Classification/blob/master/ML%20Project%20Initial%20Implementations/mlprojectimplementation.jpeg)
+
+
 <br />
 >>>>The DT.py file consist of work done regarding Decision tree with oversampling<br />
  <br />
