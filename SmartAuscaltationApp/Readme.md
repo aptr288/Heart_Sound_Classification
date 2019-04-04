@@ -1,3 +1,3 @@
-![alt text](https://github.com/aptr288/Heart-Sound-Classification/blob/master/SmartAuscaltationApp/smartAuscultation.jpeg)
+![alt text](https://github.com/aptr288/Heart-Sound-Classification/blob/master/SmartAuscaltationApp/SmartAuscultation.jpeg)
 
 
