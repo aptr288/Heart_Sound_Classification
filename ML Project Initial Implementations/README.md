@@ -1,5 +1,4 @@
-# ML Project Code
-This repository  consists of  all the Machine Learning work done 
+This repository consists of inital implementations done using sklearn and ANN
 
 ![alt text](https://github.com/aptr288/Heart-Sound-Classification/blob/master/ML%20Project%20Initial%20Implementations/mlprojectimplementation.jpeg)
 
