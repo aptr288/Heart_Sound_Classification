@@ -33,12 +33,6 @@ ypred = knn.predict(Xtest)
 X2 = sm.add_constant(Xtrain)
 est = sm.OLS(ytrain, X2)
 est2 = est.fit()
-#print(est2.summary())
-#print(stats.normaltest(ytrain))
-
-#significanceTest = mcnemar(X_Trainnew, exact = false)
-#print(significanceTest.pvalue)
-
 
 cv = StratifiedKFold(2)
 

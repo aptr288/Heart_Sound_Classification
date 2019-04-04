@@ -22,6 +22,24 @@ ytest = testM[:, 0]
 Xtest = testM[:, 1:]
 
 
+#Grid search knn
+nFolds = 4
+random_state  = 1234
+metrics       = ['minkowski','euclidean','manhattan']
+weights       = ['uniform','distance'] #10.0**np.arange(-5,4)
+numNeighbors  = np.arange(5,10)
+param_grid    = dict(metric=metrics,weights=weights,n_neighbors=numNeighbors)
+cv            = cross_validation.StratifiedKFold(ytrain, n_folds = 3)
+grid = GridSearchCV(neighbors.KNeighborsClassifier(),param_grid=param_grid,cv=cv)
+grid.fit(Xtrain,ytrain)
+
+
+
+print("Best accuracy possible and best parameters to achieve them ")
+
+print (grid.best_score_, grid.best_params_)
+
+
 
 #Class weights are used to resassign the weightage of each class which is being oversampled data 
 class_weight = class_weight.compute_class_weight('balanced', np.unique(ytrain), ytrain)

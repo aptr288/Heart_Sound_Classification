@@ -25,6 +25,21 @@ Xtrain = trainM[:, 1:]
 ytest = testM[:, 0]
 Xtest = testM[:, 1:]
 
+
+#Grid search with param grid having different set of parameters 
+param_grid = {'max_depth': np.arange(3, 10), 'min_impurity_split':np.arange(1, 5), 'min_samples_leaf':np.arange(1, 5), 'min_samples_split':np.arange(3, 10)  }
+
+tree = grid_search.GridSearchCV(DecisionTreeClassifier(), param_grid)
+
+tree.fit(Xtrain, ytrain)
+tree_preds = tree.predict_proba(Xtest)[:, 1]
+
+
+
+print("Best accuracy possible and best parameters to achieve them ")
+
+print (tree.best_score_, tree.best_params_)
+
 #calculating weights based on imbalanced data
 class_weight = class_weight.compute_class_weight('balanced', np.unique(ytrain), ytrain)
 cw ={1: class_weight[0], 2: class_weight[1], 3: class_weight[2], 4: class_weight[3], 5: class_weight[4], 6 : class_weight[5],
